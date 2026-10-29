@@ -2,14 +2,13 @@
 {
     public enum Genere
     {
-        Narrativa, 
-        Saggistica, 
-        Fantasy, 
+        Narrativa,
+        Saggistica,
+        Fantasy,
         Fantascienza,
         Giallo,
         Storico,
         Divulgazione,
         Romanzo
     }
-
 }

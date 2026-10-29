@@ -6,5 +6,5 @@
         void Presta();
         void Restituisci();
     }
-
 }
+

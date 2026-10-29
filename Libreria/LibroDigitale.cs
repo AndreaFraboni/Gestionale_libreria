@@ -1,12 +1,12 @@
 ﻿namespace Libreria
 {
-    public class LibroDigitale : Libro
+    internal class LibroDigitale : Libro
     {
-        public decimal DimensioneMB;
+        public decimal DimensioneMB { get; set; }
 
-        public override void Dettagli()
+        public override string Dettagli()
         {
-            
+            return $"{Titolo} - {Autore} - " + $"{AnnoPubblicazione} - " + $"{Genere} - {DimensioneMB} MB";
         }
     }
 }

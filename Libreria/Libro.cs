@@ -1,13 +1,12 @@
-﻿namespace Libreria {
-
+﻿namespace Libreria
+{
     public abstract class Libro
     {
+        public string Titolo { get; set; }
+        public string Autore { get; set; }
+        public int AnnoPubblicazione { get; set; }
+        public Genere Genere { get; set; }
 
-        public string Titolo;
-        public string Autore;
-        public int AnnoPubblicazione;
-        public Genere Genere;
-
-        public abstract void Dettagli();
+        public abstract string Dettagli();
     }
 }
