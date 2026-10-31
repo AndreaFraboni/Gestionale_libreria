@@ -8,15 +8,28 @@
         {
             foreach (Libro libro in listOfBooks)
             {
-                if (libro.Titolo == Titolo) return libro;
+                if (libro.Titolo.Equals(Titolo, StringComparison.OrdinalIgnoreCase))
+                {
+                    return libro;
+                }
             }
 
             return null;
         }
 
-        public static void Aggiungi(Libro libro)
+        public static void Aggiungi(Libro book)
         {
-            listOfBooks.Add(libro);
+            foreach (Libro libro in listOfBooks)
+            {
+                if (libro.Titolo.Equals(book.Titolo, StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine("Libro già presente !!!");
+                    return;
+                }
+            }
+
+            listOfBooks.Add(book);
+            Console.WriteLine("Libro aggiunto correttamente!");
         }
 
         public static void Rimuovi(Libro libro)

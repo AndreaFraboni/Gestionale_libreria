@@ -14,6 +14,7 @@
             if (Prestato == false)
             {
                 Prestato = true;
+                Console.WriteLine("Libro prestato correttamente!");
             }
             else
             {
@@ -26,6 +27,7 @@
             if (Prestato == true)
             {
                 Prestato = false;
+                Console.WriteLine("Libro restituito correttamente!");
             }
             else
             {
